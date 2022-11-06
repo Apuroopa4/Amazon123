@@ -1,8 +1,11 @@
 pipeline{
-    agent slave
+    agent label 
+    		{
+    			"slave"
+		}
     tools{
-    	maven "m1"
-    }
+    	 	maven "m1"
+    	}
     stages {
         
         stage('clone') {
