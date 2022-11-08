@@ -36,6 +36,14 @@ pipeline{
 
 			}
         }
+    post {
+    always
+    {
+    echo 'finished'
+    deleteDir()
+}
+}
+}
     }
     
 }
